@@ -1,0 +1,26 @@
+*{
+  font-family: 'Chewy', cursive;
+
+  color: #f2e2cd;
+
+  text-align: center;
+
+  list-style: none;
+
+  -moz-box-sizing: border-box; /* Firexfox */
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+
+  box-sizing: border-box; /* IE */
+}
+
+body{
+  background: #5c0a1b;
+}
+h3{
+  margin-top: 40px;
+}
+
+button{
+  color: black;
+}

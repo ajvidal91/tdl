@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>TO-DO-LIST</h1>
+
+
+
+  <h3>Things To Do</h3>
+  <ul class="messages">
+  <% for(var i=0; i<messages.length; i++) {%>
+    <li class="message">
+      <span><%= messages[i].name %></span>
+      <span><%= messages[i].msg %></span>
+      <a href="#"><i edit >edit</i></a>
+      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <h2>Add Something To Do</h2>
+
+  <form action="/messages" method="POST">
+    <input class="inForm" type="text" placeholder="message" name="msg">
+    <button class="inForm" type="submit">Submit</button>
+    <button type="button" >Remove All</button>
+  </form>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
